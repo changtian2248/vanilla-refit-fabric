@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "btsdhz_original",
+	"version": "${version}",
+	"name": "原版精修",
+	"description": "为台阶和楼梯添加竖形态，添加多项原版风格的改动。Vanilla Refit — Fabric 1.21.1 移植版。",
+	"authors": [
+		"btsdhz"
+	],
+	"license": "MIT",
+	"icon": "btsdhz_original.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.btsdhz.vanillarefit.BtsdhzOriginal"
+		],
+		"client": [
+			"com.btsdhz.vanillarefit.client.VanillaRefitClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "btsdhz_original.mixins.json",
+			"environment": "*"
+		},
+		{
+			"config": "btsdhz_original.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": ">=1.21 <1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

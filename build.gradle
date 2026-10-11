@@ -1,0 +1,55 @@
+// 原版精修 (Vanilla Refit) — Fabric 1.21.1 移植版
+//
+// 原始版本为 NeoForge 1.21.1（mod id 同为 btsdhz_original）。本工程把其逐文件移植到 Fabric。
+// 使用 Mojang 官方映射（officialMojangMappings），因此原模组里 net.minecraft.* 的类名与方法名
+// 全部与官方代码一致，只有 NeoForge 专有 API 那部分在移植中改写为 Fabric 对应实现。
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+}
+
+repositories {
+	// 全部依赖走 Fabric 官方源 + 全局 init.gradle 里的国内镜像，无需额外仓库。
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// MixinExtras：@WrapOperation / @ModifyReturnValue / @Local 语法糖所需。
+	// Fabric Loader 已内置一份，这里再随包发一份以保证开发/生产环境行为一致。
+	include(implementation("io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}"))
+}
+
+group = project.maven_group
+base.archivesName = project.archives_base_name
+version = project.mod_version
+
+processResources {
+	filteringCharset = "UTF-8"
+	def modVersion = project.mod_version
+	inputs.property "version", modVersion
+	filesMatching("fabric.mod.json") {
+		expand "version": modVersion
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = "UTF-8"
+	it.options.release = 21
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+	def modId = 'btsdhz_original'
+	inputs.property "modId", modId
+	from("LICENSE") {
+		rename { "${it}_${modId}" }
+	}
+}

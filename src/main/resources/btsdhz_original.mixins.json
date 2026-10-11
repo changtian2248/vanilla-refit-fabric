@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "package": "com.btsdhz.vanillarefit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SlabBlockMixin",
+    "OnSlabCollisionMixin",
+    "OnSlabPickBlockMixin",
+    "BlockItemMixin",
+    "BucketMixin",
+    "StairBlockMixin",
+    "IronBarsBlockMixin",
+    "GlassPaneCornerMixin",
+    "BlockStatePostProcessMixin",
+    "LevelChunkPostProcessMixin",
+    "PaneIndirectNeighbourMixin",
+    "BlockOnSlabStateMixin",
+    "TorchOnSlabMixin",
+    "LanternOnSlabMixin",
+    "FenceOnSlabMixin",
+    "CrossCollisionOnSlabMixin",
+    "WallOnSlabMixin",
+    "ClipContextShapeMixin",
+    "BlockBehaviourSlabWallMixin",
+    "BlockStateSymmetryMixin",
+    "RedstoneTorchOnSlabMixin",
+    "ServerPlayerGameModeMixin",
+    "LeadItemMixin",
+    "AnvilMenuMixin",
+    "PlayerSitMixin",
+    "PlayerEyeHeightMixin",
+    "PlayerCrawlPoseMixin",
+    "LevelFluidNotifyMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

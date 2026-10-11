@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.btsdhz.vanillarefit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "TorchParticleMixin",
+    "RedstoneTorchParticleMixin",
+    "MultiPlayerGameModeMixin",
+    "SitDismountHintMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
