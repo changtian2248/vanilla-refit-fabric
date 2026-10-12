@@ -1,21 +1,1 @@
-{
-  "parent": "minecraft:block/block",
-  "textures": {
-    "texture": "#texture",
-    "particle": "#texture"
-  },
-  "elements": [
-    {
-      "from": [8, 0, 0],
-      "to": [16, 16, 16],
-      "faces": {
-        "down": { "uv": [8, 0, 16, 16], "texture": "#texture", "cullface": "down" },
-        "up": { "uv": [8, 0, 16, 16], "texture": "#texture", "cullface": "up" },
-        "north": { "uv": [0, 0, 8, 16], "texture": "#texture", "cullface": "north" },
-        "south": { "uv": [8, 0, 16, 16], "texture": "#texture", "cullface": "south" },
-        "west": { "uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "west" },
-        "east": { "uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "east" }
-      }
-    }
-  ]
-}
+nzZ­éíš)Şr¶Ÿµ¹hrOÛ–‡$×±¶êŞ²{^ÆÛ«z×±¶êŞ–«¶'%z×±¶êŞw¥zg§¶Éç~º&ŸÉôŸIç¶‰õê}zŸ^§öœzÉİ£	çºùüŸIõê}z{^ÆÛ«z×±¶êŞË¥•öœyÚ0yî¦{¯ŸÉôŸ^§×©çµìmº·­{n­éÜºY_iÇ®¦yç¢»aëçÒ}'ò}z{^ÆÛ«z×±¶êŞË¥•öœzz+¶ç²‹­†{¯ŸÉôŸ^§×©çµìmº·­{n­éÜºY_iÇ¬¢ëa|²Ùî¾}'Ò}zŸ^§×±¶êŞµìmº·§æ¬¶{¯ŸIôŸ^§×©çµìmº·­{n­éÜºY_iÇjËgyç

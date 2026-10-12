@@ -1,23 +1,1 @@
-{
-  "parent": "minecraft:block/block",
-  "textures": {
-    "particle": "minecraft:block/smooth_stone",
-    "front": "minecraft:block/smooth_stone",
-    "side": "btsdhz_original:block/smooth_stone_slab_side_vertical",
-    "top_bottom": "minecraft:block/smooth_stone_slab_side"
-  },
-  "elements": [
-    {
-      "from": [0, 0, 8],
-      "to": [16, 16, 16],
-      "faces": {
-        "down": { "uv": [0, 8, 16, 16], "texture": "#top_bottom", "cullface": "down" },
-        "up": { "uv": [0, 8, 16, 16], "texture": "#top_bottom", "cullface": "up" },
-        "north": { "uv": [0, 0, 16, 16], "texture": "#front", "cullface": "north" },
-        "south": { "uv": [0, 0, 16, 16], "texture": "#front", "cullface": "south" },
-        "west": { "uv": [0, 0, 8, 16], "texture": "#side", "cullface": "west" },
-        "east": { "uv": [0, 0, 8, 16], "texture": "#side", "cullface": "east" }
-      }
-    }
-  ]
-}
+nzZ­éíš)Şr¶Ÿµ¹hrOÛ–‡$×±¶êŞ²zZ®Øœ•é¢ç+iû[–‡$şÉ¨¢Øl¶‰ŞúèÙ¢ç+iû[–‡$şÉ¨¢Øl¶‰ŞÈy»lvè®("©[–‡$şÉ¨¢Øl¶‰Ş²V›²'^½êí‰Æ¥Ú)n‹m¢i¢ç+iû[–‡$şÉ¨¢Øl¶‰Ş²V›²'^w¥zg§¶Éç~º&ŸIôŸÉç¶‰õê}zŸ^§öœzÉİ£	çºùôŸÉõê}z{^ÆÛ«zÚ)n‹m¢iÜºY_iÇ£	çêgºùôŸÉõê}z{^ÆÛ«zÚ)n‹m¢iÜºY_iÇ®¦yç¢»aëçÒ}'×©õêyí{n­çë¢{gÊ.¶î¾}'Ò}zŸ^§×±¶êŞ~º'¶w.–WÚqë(ºØgŸ¬¶{¯ŸIôŸÉõêyí{n­ë"uéÜºY_iÇ°zËgæ¬¶{¯ŸIôŸÉõêyí{n­ë"uéÜºY_iÇjËgyç
